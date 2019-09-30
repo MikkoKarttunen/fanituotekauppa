@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 0.00001s linear;
   height: 40vmin;
   pointer-events: none;
 }
@@ -30,4 +30,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-body {
+  background-color: #282c30;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+img {
+  max-height: 200px;
+max-width: 200px;
+width: 200px;
+height: 200px;
 }
