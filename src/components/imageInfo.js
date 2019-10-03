@@ -15,7 +15,7 @@ const ImageInfo = ({ imageData, addProduct }) => {
                 <p>{imageData.Description}</p>
                 <p>Hinta: {imageData.Price}€</p>
                 <p>Määrä: {imageData.Amount}</p>
-                <button onClick={addProduct}> </button>
+                <button onClick={e =>addProduct(imageData.id)}>Lisää</button>
             </div>
         )
     }
@@ -28,12 +28,12 @@ const ImageInfo = ({ imageData, addProduct }) => {
     }
 }
 
-const ImagesInfo = ({ images, set }) => {
-const addProduct = id => {
-    const tempImages = [...images];
-    tempImages.find(img => img.id === id).amount++;
-    set(tempImages);
-}
+const ImagesInfo = ({ images, set}) => {
+    const addProduct = id => {
+        const tempImages = [...images];
+        tempImages.find(img => img.id === id).Amount++;
+        set(tempImages);
+    }
     return (
         <tbody>
 
