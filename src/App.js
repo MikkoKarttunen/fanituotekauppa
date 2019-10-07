@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Images from './components/imageData.js'
 import ImagesInfo from './components/imageInfo.js'
+import ShoppingCart from './components/shoppingCart.js'
 const App = () => {
 
   const [myImages, setMyImages] = useState(Images);
@@ -16,8 +17,9 @@ const App = () => {
         <h2>Mikon jääpuoti</h2>
       </header>
       <body className="App-body">
-        <ImagesInfo images={myImages}set={setMyImages} />
-      </body>
+        <ImagesInfo images={myImages} set={setMyImages} />
+        <ShoppingCart images={myImages} set={setMyImages} />
+        </body>
     </div>
   );
 }

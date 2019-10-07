@@ -2,7 +2,7 @@ const images = [
     {
         Url: "https://cdn2.picryl.com/photo/2019/03/08/chic-necklace-with-vertical-bar-of-black-spinel-paired-with-shorter-hammered-821193-640.jpg",
         Title: "Rankakoru",
-        Description: "kaulakoru!!",
+        Description: "aika weak",
         Amount: 0,
         Price : 30,
         id: 0
