@@ -19,7 +19,7 @@ const CartItem = ({ imageData, addProduct, reduceProduct }) => {
 const ShoppingCart = ({set, images}) => {
     const filteredItems = images.filter(item => item.Amount != 0);
 
-const amounts = myImages.map(img => imageData.Amount * imageData.price);
+const amounts = images.map(img => img.Amount * img.Price);
 const ordered = amounts.reduce((a, b) => a + b, 0);
 
     return(
@@ -29,8 +29,7 @@ const ordered = amounts.reduce((a, b) => a + b, 0);
                 <CartItem imageData={c} key={c.id} />
             ))}
 
-            //tuotteet tähän
-            <p>yhteensä: </p>
+            <p>yhteensä: {ordered}€</p>
         </div>
     )
 }
